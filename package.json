@@ -1,0 +1,9 @@
+{
+	"name": "io.bullrich.unityjsonwrapper",
+	"displayName": "Unity Json Wrapper",
+	"description": "A wrapper built around Json.NET to simplify its use ",
+	"version": "0.0.3",
+	"unity": "5.6.4",
+	"license": "MIT",
+	"dependencies": {}
+}
