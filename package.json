@@ -1,9 +1,25 @@
 {
-	"name": "io.bullrich.unityjsonwrapper",
-	"displayName": "Unity Json Wrapper",
-	"description": "A wrapper built around Json.NET to simplify its use ",
-	"version": "0.0.3",
-	"unity": "5.6.4",
-	"license": "MIT",
-	"dependencies": {}
+  "name": "eu.innerspace.unityjsonwrapper",
+  "displayName": "Unity Json Wrapper",
+  "description": "A wrapper built around Json.NET to simplify its use",
+  "version": "0.0.4",
+  "unity": "2018.4",
+  "unityRelease": "8f1",
+  "homepage": "https://github.com/innerspacetrainings/Unity-Json-Wrapper/",
+  "bugs": {
+    "url": "https://github.com/innerspacetrainings/Unity-Json-Wrapper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:innerspacetrainings/Unity-Json-Wrapper.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Innerspace",
+    "email": "javier.bullrich@innerspace.eu",
+    "url": "https://www.innerspace.eu/"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "2.0.0"
+  }
 }
