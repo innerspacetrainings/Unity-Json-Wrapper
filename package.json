@@ -2,7 +2,7 @@
   "name": "eu.innerspace.unityjsonwrapper",
   "displayName": "Unity Json Wrapper",
   "description": "A wrapper built around Json.NET to simplify its use",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "unity": "2018.4",
   "unityRelease": "8f1",
   "homepage": "https://github.com/innerspacetrainings/Unity-Json-Wrapper/",
