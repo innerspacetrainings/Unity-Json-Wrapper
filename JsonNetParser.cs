@@ -11,21 +11,20 @@ namespace Blue.Json
 {
     public class JsonNetParser : IJsonParser
     {
-        private EndOfStreamException IncompleteJsonException
+        private EndOfStreamException IncompleteJsonException =>
+            new EndOfStreamException("Json shouldn't have finished here!");
+
+        public string Serialize(IDictionary<string, object> obj, bool prettyPrint = false)
         {
-            get { return new EndOfStreamException("Json shouldn't have finished here!"); }
+            return Serialize((object) obj, prettyPrint);
         }
 
-        public string Serialize(IDictionary<string, object> obj)
-        {
-            return Serialize((object) obj);
-        }
-
-        public string Serialize(object obj)
+        public string Serialize(object obj, bool prettyPrint = false)
         {
             StringBuilder sb = new StringBuilder();
             StringWriter sw = new StringWriter(sb);
-            using (var writer = new JsonTextWriter(sw))
+            Formatting formatting = prettyPrint ? Formatting.Indented : Formatting.None;
+            using (var writer = new JsonTextWriter(sw) {Formatting = formatting})
                 SerializeValue(writer, obj);
             return sb.ToString();
         }

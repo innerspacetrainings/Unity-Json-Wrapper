@@ -6,10 +6,10 @@ namespace Blue.Json
     {
         /// <summary>Serialize Dictionary to a json</summary>
         /// <returns>Serialized JSON</returns>
-        string Serialize(IDictionary<string, object> dictionary);
+        string Serialize(IDictionary<string, object> dictionary, bool prettyPrint = false);
         /// <summary>Serializes a object which supports serialization</summary>
         /// <returns>Serialized JSON</returns>
-        string Serialize(object obj);
+        string Serialize(object obj, bool prettyPrint = false);
 
         /// <summary>Parse a json to a Dictionary of type string/object</summary>
         /// <seealso cref="JsonDictionary"/>
